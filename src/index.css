@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700&family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+
+@import 'tailwindcss';
+
+:root {
+  --font-heading-game: 'Press Start 2P', cursive;
+  --font-heading-modern: 'Orbitron', sans-serif;
+  --font-heading-bold: 'Bebas Neue', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+
+body {
+  font-family: var(--font-body);
+  background-color: #1a202c;
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading-modern);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.homepage-hero-text {
+  font-family: var(--font-heading-modern);
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.text-6xl.font-bold.text-lime-400.mb-8 {
+  font-family: var(--font-heading-game);
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    4px 4px 0 rgba(0, 0, 0, 0.7);
+}
+
+.homepage-logo-text {
+  font-family: var(--font-heading-game);
+  letter-spacing: 0.1em;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.pokemon-card h2 {
+  font-family: var(--font-heading-bold);
+}
+
+.text-shadow-lg {
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.homepage-loading-overlay {
+    background-color: #1a202c;
+}
+
+.homepage-loading-block {
+  background: linear-gradient(
+    90deg,
+    rgba(79, 70, 229, 0) 0%,
+    rgba(79, 70, 229, 0) 49.5%,
+    #a78bfa 50%,
+    rgba(79, 70, 229, 0) 50.5%,
+    rgba(79, 70, 229, 0) 100%
+  );
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  will-change: transform, background-position;
+}
+
+.homepage-main-content {
+  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+  background-position: center center;
+}
+
+.homepage-hero-pixel-overlay {
+  background-image: linear-gradient(rgba(0,0,0,0.2) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0,0,0,0.2) 1px, transparent 1px);
+  background-size: 2px 2px;
+  pointer-events: none;
+}
