@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const Button = () => {
   return (
     <StyledWrapper>
-      <a href="https://github.com/Dhruv-Desai-05/Pokendium" target="_blank" rel="noopener noreferrer" className="button">
+      <a href="https://github.com/Dhruvdesai793/Pokendium" target="_blank" rel="noopener noreferrer" className="button">
         <span className="text">Star on GitHub</span>
         <svg aria-hidden="true" fill="currentColor" viewBox="0 0 47.94 47.94" xmlns="http://www.w3.org/2000/svg" className="icon">
           <path d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
